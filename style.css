@@ -1,0 +1,256 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* smooth scrolling jab nav se click kare */
+}
+
+
+section {
+    height: 100vh;         /* full screen */
+    display: flex;         /* center karne ke liye */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+
+}
+header {
+    background-color: rgb(172, 108, 63);
+    padding: 5px 5px;
+    position: sticky;      /* sticky header */
+    top: 0;
+    z-index: 1000;        /* header hamesha top pe rahe */
+}
+
+.navbar a {
+    color: #55518b; /* Example color, matches your image */
+    text-decoration: none; /* Removes the default underline */
+    font-weight: bold;
+    padding: 2px 5px; /* Adds space around the text, making the clickable area larger */
+    transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar a:hover {
+    color: #bdaba9; /* Change color on hover */
+    text-decoration:none; /* Add underline on hover */
+    cursor: pointer; /* Changes the cursor to a pointer, indicating it's clickable */
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+}
+
+nav li{
+    margin-right : 20px;
+}
+
+header nav ul{
+    color: rgb(177, 205, 50);
+}
+ 
+#about{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background:#f5f5f5 ;
+    background-color: #f9f9f9;
+    gap:20px
+    
+}
+
+#about .about-text {
+    flex: 1;                   /* take half screen */
+    padding-right: 30px;
+}
+
+.about-image img {
+    max-width:100%;
+    height:auto;
+    width:300px;
+    border-radius: 10px;        /* circular image */
+    object-fit: cover;
+    margin-left:40px;
+    margin-top:40px;
+    box-shadow: #c49749 0px 0px 10px ;
+    
+}
+
+
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.about-text h2{
+    color: saddlebrown;
+    margin-bottom: 20px;
+    font-size: 32px;
+    margin-bottom: 15px;
+    margin-left: 70px;
+    font-weight:bold;
+    text-align:left;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
+.quote {
+    font-size: 20px;
+    line-height: 1.8;
+    font-style: italic;
+    color: #333;
+    position: relative;
+    padding: 20px;
+    background: #f9f9f9;
+    border-left: 5px solid #c49749;
+    margin: 20px auto;
+    width: 70%; /* description ka width */
+}
+
+/* Opening Quote */
+.quote::before {
+    content: "“";
+    font-size: 60px;
+    color: #c49749;
+    position: absolute;
+    left: 0px;
+    top: -20px;
+}
+
+/* Closing Quote */
+.quote::after {
+    content: "”";
+    font-size: 60px;
+    color: #c49749;
+    position: absolute;
+    right: 10px;
+    bottom: -20px;
+}
+
+
+
+
+.about-image{
+    display: flex;
+    justify-content: flex-end
+}
+
+#about img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: grey 5px 5px 15px;
+}
+
+
+#projects h2{
+    text-align: center;
+}
+
+.project-item{
+    background-color: #e2b595e9;
+    border-radius: 10px;
+    height:300px;
+    width : 200px;
+    text-align: center ;
+    color: saddlebrown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.project-item:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+    box-shadow: rgb(99, 93, 89) 5px 5px 15px;
+}
+
+.project-container{
+    display: flex;
+    justify-content: space-around;
+    gap:50px;
+    flex-wrap: wrap;  
+}
+.projects,h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color:#e2af87;
+    background-color: saddlebrown;
+    margin-bottom: 40px;
+    padding: 2px 20px;
+    border-radius: 10px;
+
+}
+
+#project-item,h3{
+    background-color: rgb(201, 113, 24);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    width: 150px;
+}
+
+#project-item,p{
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#project-item,a{
+    text-decoration: none;
+    color: #55518b;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.social-links ul{
+    display: flex;
+    list-style-type: none;
+    padding:0;
+    gap: 20px;
+    justify-content: center;
+}
+
+footer{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Style all social icons */
+.social-links a {
+    color: inherit;   /* take the color from parent, not default blue */
+    text-decoration: none; /* remove underline */
+    font-size: 2rem;  /* optional: make them bigger */
+    margin: 0 10px;   /* optional: spacing */
+}
+
+/* Change icon color globally */
+.social-links i {
+    color: black;   /* or white, or any color you want */
+    transition: color 0.3s ease;
+}
+
+/* On hover */
+.social-links a:hover i {
+    color: #0077b5; /* example: LinkedIn blue */
+}
