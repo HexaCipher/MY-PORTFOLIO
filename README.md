@@ -1,2 +1,2 @@
 # MY-PORTFOLIO
-This is my personal Portfolio also my first project  , which is made by me using HTML and CSS
+This is my personal Portfolio also my first project for learning purpose, which is made by me using HTML and CSS
